@@ -509,46 +509,49 @@
 
 })(jQuery);
 
+// document.addEventListener('DOMContentLoaded', function () {
+//     const themeToggleBtn = document.getElementById('themeToggleBtn');
+//     const htmlElement = document.documentElement;
+
+//     // Check if theme preference is stored in localStorage
+//     const storedTheme = localStorage.getItem('theme');
+//     if (storedTheme) {
+//         htmlElement.setAttribute('data-bs-theme', storedTheme);
+//         updateIcon(storedTheme); // Update the icon based on the stored theme
+//     }
+
+//     themeToggleBtn.addEventListener('click', function () {
+//         // Check the current theme and toggle
+//         if (htmlElement.getAttribute('data-bs-theme') === 'dark') {
+//             htmlElement.setAttribute('data-bs-theme', 'light');
+//             updateIcon('light'); // Update the icon when switching to the light theme
+//             localStorage.setItem('theme', 'light'); // Store the theme preference in localStorage
+//             localStorage.setItem('mapStyle', 'light'); // Store the theme preference in localStorage
+//             localStorage.setItem('imagePath', 'assets/images/lines.svg'); // Store the theme preference in localStorage
+//         } else {
+//             htmlElement.setAttribute('data-bs-theme', 'dark');
+//             updateIcon('dark'); // Update the icon when switching to the dark theme
+//             localStorage.setItem('theme', 'dark'); // Store the theme preference in localStorage
+//             localStorage.setItem('mapStyle', 'dark'); // Store the theme preference in localStorage
+//             localStorage.setItem('imagePath', 'assets/images/lines-2.svg'); // Store the theme preference in localStorage
+//         }
+//     });
+
+//     function updateIcon(theme) {
+//         const iconElement = themeToggleBtn.querySelector('i');
+//         iconElement.className = theme === 'dark' ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
+//     }
+// });
+
 document.addEventListener('DOMContentLoaded', function () {
-    const themeToggleBtn = document.getElementById('themeToggleBtn');
     const htmlElement = document.documentElement;
 
-    // Check if theme preference is stored in localStorage
-    const storedTheme = localStorage.getItem('theme');
-    if (storedTheme) {
-        htmlElement.setAttribute('data-bs-theme', storedTheme);
-        updateIcon(storedTheme); // Update the icon based on the stored theme
-    }
-
-    themeToggleBtn.addEventListener('click', function () {
-        // Check the current theme and toggle
-        if (htmlElement.getAttribute('data-bs-theme') === 'dark') {
-            htmlElement.setAttribute('data-bs-theme', 'light');
-            updateIcon('light'); // Update the icon when switching to the light theme
-            localStorage.setItem('theme', 'light'); // Store the theme preference in localStorage
-            localStorage.setItem('mapStyle', 'light'); // Store the theme preference in localStorage
-            localStorage.setItem('imagePath', 'assets/images/lines.svg'); // Store the theme preference in localStorage
-        } else {
-            htmlElement.setAttribute('data-bs-theme', 'dark');
-            updateIcon('dark'); // Update the icon when switching to the dark theme
-            localStorage.setItem('theme', 'dark'); // Store the theme preference in localStorage
-            localStorage.setItem('mapStyle', 'dark'); // Store the theme preference in localStorage
-            localStorage.setItem('imagePath', 'assets/images/lines-2.svg'); // Store the theme preference in localStorage
-        }
-    });
-
-    function updateIcon(theme) {
-        const iconElement = themeToggleBtn.querySelector('i');
-        iconElement.className = theme === 'dark' ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
-    }
+    // Set dark mode as the default and only theme
+    htmlElement.setAttribute('data-bs-theme', 'dark');
+    localStorage.setItem('theme', 'dark');  // Store the theme preference in localStorage
+    localStorage.setItem('mapStyle', 'dark');  // Store the map style preference in localStorage
+    localStorage.setItem('imagePath', 'assets/images/lines-2.svg');  // Store the image path preference in localStorage
 });
-
-htmlElement.setAttribute('data-bs-theme', 'dark');
-updateIcon('dark'); // Update the icon when switching to the dark theme
-localStorage.setItem('theme', 'dark'); // Store the theme preference in localStorage
-localStorage.setItem('mapStyle', 'dark'); // Store the theme preference in localStorage
-localStorage.setItem('imagePath', 'assets/images/lines-2.svg'); // Store the theme preference in localStorage
-
 
 document.addEventListener("DOMContentLoaded", function () {
     // Get all elements with the class .js-bg-image-lines
