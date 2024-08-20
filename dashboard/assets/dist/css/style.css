@@ -53,11 +53,11 @@
 .btn-primary {
     --bs-btn-bg: #bb0303;
     --bs-btn-border-color: #bb0303;
-    --bs-btn-hover-bg: #eb3616;
-    --bs-btn-hover-border-color: #eb3616;
+    --bs-btn-hover-bg: #b40101;
+    --bs-btn-hover-border-color: #b40101;
     --bs-btn-focus-shadow-rgb: none;
-    --bs-btn-active-bg: #eb3616;
-    --bs-btn-active-border-color: #eb3616;
+    --bs-btn-active-bg: #b40101;
+    --bs-btn-active-border-color: #b40101;
     --bs-btn-disabled-bg: #bb0303;
     --bs-btn-disabled-border-color: #bb0303;
 }

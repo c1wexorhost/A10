@@ -41,9 +41,10 @@
 ----------------------------------------------------------------- */
 :root,
 [data-bs-theme=light] {
+    --danger-yellow:#79A70A;
     --bs-blue: #0c72c6;
     --bs-primary: #bb0303;
-    --bs-primary-rgb: 248, 69, 37;
+    --bs-primary-rgb: 187, 3, 3;
     --footer-bg-color: #191e25;
     --bs-light: #f8f4f3;
     --bs-light-rgb: 248, 244, 243;
@@ -598,7 +599,7 @@ h6 {
     left: 0px;
     top: 100%;
     z-index: -1;
-    border-left: 3px solid #79A70A;
+    border-left: 3px solid var(--danger-yellow);
     border-right: 3px solid transparent;
     border-bottom: 3px solid transparent;
     border-top: 3px solid #79A70A;
@@ -617,9 +618,9 @@ h6 {
 }
 
 .red span {
-    background: -o-linear-gradient(#F70505 0%, #bb0303 100%);
-    background: -webkit-gradient(linear, left top, left bottom, from(#F70505), to(#bb0303));
-    background: linear-gradient(#F70505 0%, #bb0303 100%);
+    background: -o-linear-gradient(#b40101 0%, #bb0303 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(#b40101), to(#bb0303));
+    background: linear-gradient(#b40101 0%, #bb0303 100%);
 }
 
 .red span::before {
@@ -932,11 +933,11 @@ textarea.form-control {
 .btn-primary {
     --bs-btn-bg: #bb0303;
     --bs-btn-border-color: #bb0303;
-    --bs-btn-hover-bg: #eb3616;
-    --bs-btn-hover-border-color: #eb3616;
+    --bs-btn-hover-bg: #b40101;
+    --bs-btn-hover-border-color: #b40101;
     --bs-btn-focus-shadow-rgb: none;
-    --bs-btn-active-bg: #eb3616;
-    --bs-btn-active-border-color: #eb3616;
+    --bs-btn-active-bg: #b40101;
+    --bs-btn-active-border-color: #b40101;
     --bs-btn-disabled-bg: #bb0303;
     --bs-btn-disabled-border-color: #bb0303;
 }
@@ -944,15 +945,15 @@ textarea.form-control {
 .btn-outline-primary {
     --bs-btn-color: #bb0303;
     --bs-btn-border-color: #bb0303;
-    --bs-btn-hover-bg: #eb3616;
-    --bs-btn-hover-border-color: #eb3616;
+    --bs-btn-hover-bg: #8b1702;
+    --bs-btn-hover-border-color: #b40101;
     --bs-btn-focus-shadow-rgb: 13, 110, 253;
-    --bs-btn-active-bg: #eb3616;
-    --bs-btn-active-border-color: #eb3616;
+    --bs-btn-active-bg: #b40101;
+    --bs-btn-active-border-color: #b40101;
     --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #eb3616;
+    --bs-btn-disabled-color: #b40101;
     --bs-btn-disabled-bg: transparent;
-    --bs-btn-disabled-border-color: #eb3616;
+    --bs-btn-disabled-border-color: #b40101;
     --bs-gradient: none;
 }
 
@@ -1669,7 +1670,7 @@ hr {
 .menu-badge {
     font-size: 10px;
     background-color: #f8e6ec;
-    color: #eb0254;
+    color: #b40101;
     border-radius: 10px;
     padding: 3px 10px;
     margin-left: 6px;
