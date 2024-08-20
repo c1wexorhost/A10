@@ -42,7 +42,7 @@
 :root,
 [data-bs-theme=light] {
     --bs-blue: #0c72c6;
-    --bs-primary: #b21d10;
+    --bs-primary: #bb0303;
     --bs-primary-rgb: 248, 69, 37;
     --footer-bg-color: #191e25;
     --bs-light: #f8f4f3;
@@ -533,7 +533,7 @@ h6 {
 /* progress -------- */
 .progress,
 .progress-stacked {
-    --bs-progress-bar-bg: #F84525;
+    --bs-progress-bar-bg: #bb0303;
     --bs-progress-height: .4rem;
 }
 
@@ -617,19 +617,19 @@ h6 {
 }
 
 .red span {
-    background: -o-linear-gradient(#F70505 0%, #F84525 100%);
-    background: -webkit-gradient(linear, left top, left bottom, from(#F70505), to(#F84525));
-    background: linear-gradient(#F70505 0%, #F84525 100%);
+    background: -o-linear-gradient(#F70505 0%, #bb0303 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(#F70505), to(#bb0303));
+    background: linear-gradient(#F70505 0%, #bb0303 100%);
 }
 
 .red span::before {
-    border-left-color: #F84525;
-    border-top-color: #F84525;
+    border-left-color: #bb0303;
+    border-top-color: #bb0303;
 }
 
 .red span::after {
-    border-right-color: #F84525;
-    border-top-color: #F84525;
+    border-right-color: #bb0303;
+    border-top-color: #bb0303;
 }
 
 .blue span {
@@ -930,20 +930,20 @@ textarea.form-control {
 
 /*Button primary*/
 .btn-primary {
-    --bs-btn-bg: #F84525;
-    --bs-btn-border-color: #F84525;
+    --bs-btn-bg: #bb0303;
+    --bs-btn-border-color: #bb0303;
     --bs-btn-hover-bg: #eb3616;
     --bs-btn-hover-border-color: #eb3616;
     --bs-btn-focus-shadow-rgb: none;
     --bs-btn-active-bg: #eb3616;
     --bs-btn-active-border-color: #eb3616;
-    --bs-btn-disabled-bg: #F84525;
-    --bs-btn-disabled-border-color: #F84525;
+    --bs-btn-disabled-bg: #bb0303;
+    --bs-btn-disabled-border-color: #bb0303;
 }
 
 .btn-outline-primary {
-    --bs-btn-color: #F84525;
-    --bs-btn-border-color: #F84525;
+    --bs-btn-color: #bb0303;
+    --bs-btn-border-color: #bb0303;
     --bs-btn-hover-bg: #eb3616;
     --bs-btn-hover-border-color: #eb3616;
     --bs-btn-focus-shadow-rgb: 13, 110, 253;
@@ -983,15 +983,15 @@ textarea.form-control {
     --bs-btn-color: #212529;
     --bs-btn-bg: #fff;
     --bs-btn-border-color: #ced4da;
-    --bs-btn-hover-color: #F84525;
+    --bs-btn-hover-color: #bb0303;
     --bs-btn-hover-bg: #cdcdcd;
     --bs-btn-hover-border-color: #c6c7c8;
     --bs-btn-focus-shadow-rgb: 211, 212, 213;
-    --bs-btn-active-color: #F84525;
+    --bs-btn-active-color: #bb0303;
     --bs-btn-active-bg: #e7e7e7;
     --bs-btn-active-border-color: #babbbc;
     --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #F84525;
+    --bs-btn-disabled-color: #bb0303;
     --bs-btn-disabled-bg: #fff;
     --bs-btn-disabled-border-color: #ced4da;
 }
