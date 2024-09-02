@@ -57,6 +57,7 @@
     "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Noto Color Emoji";
   --bs-gradient: linear-gradient(#f8f4f3, #fff);
+  --bs-whatsapp: green;
 }
 
 [data-bs-theme="dark"] {

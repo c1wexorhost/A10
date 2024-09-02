@@ -37,6 +37,7 @@
     --bs-font-caveat: 'Caveat', cursive;
     --bs-font-sans-serif: "Wix Madefor Display", sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --bs-gradient: linear-gradient(#f8f4f3, #fff);
+    --bs-whatsapp:rgb(12, 184, 12);
 }
 
 .dark:root,
@@ -3796,6 +3797,13 @@ div.dt-button-info {
 }
 
 @media (max-width: 576px) {
+    .google-maps-container {
+        padding-bottom: 100%; /* Square aspect ratio for very small screens */
+        margin-bottom: 20px;
+    
+    }
+}
+@media (max-width: 376px) {
     .google-maps-container {
         padding-bottom: 100%; /* Square aspect ratio for very small screens */
         margin-bottom: 20px;
