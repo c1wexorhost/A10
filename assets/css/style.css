@@ -2761,6 +2761,9 @@ hr {
 .region-card-link-text {
   letter-spacing: 0.2em;
 }
+.region-card{
+  height: 25rem;
+}
 
 /* Decoration ------------- */
 

@@ -3863,3 +3863,8 @@ body {
 .job-card button:hover {
     background-color: #0056b3;
 }
+
+
+.size {
+    height: 10rem;
+}
