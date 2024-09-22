@@ -4342,14 +4342,14 @@ hr {
   display: inline-block;
 }
 
-[dir="rtl"] .owl-carousel,
+/* [dir="rtl"] .owl-carousel,
 [dir="rtl"] .bx-wrapper {
   direction: ltr;
 }
 
 [dir="rtl"] .owl-carousel .owl-item {
   direction: rtl;
-}
+} */
 
 /* owl nav bottom */
 .owl-nav-bottom.owl-theme .owl-nav {
@@ -4479,6 +4479,7 @@ hr {
   border-color: var(--bs-primary);
 }
 
+
 .owl-nav-bottom.owl-theme .owl-dots {
   bottom: 19px;
   left: 0;
@@ -4538,7 +4539,31 @@ hr {
 .owl-nav-center.owl-theme .owl-nav {
   margin-top: 0;
 }
+.owl-nav .owl-prev, .owl-nav .owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  z-index: 1000; /* Ensure arrows are above other elements */
+}
 
+.owl-nav .owl-prev {
+  left: -25px; /* Adjust as needed */
+}
+
+.owl-nav .owl-next {
+  right: -25px; /* Adjust as needed */
+}
+
+/* Ensure arrows are visible on larger screens */
+@media (min-width: 992px) {
+  .owl-nav .owl-prev, .owl-nav .owl-next {
+    display: block;
+  }
+}
+.owl-nav .owl-prev, .owl-nav .owl-next {
+  z-index: 1000; /* Ensure z-index is high enough */
+}
 .owl-nav-center.owl-theme .owl-nav [class*="owl-"] {
   color: #fff;
   padding: 4px 7px;

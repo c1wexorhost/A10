@@ -3824,7 +3824,7 @@ body {
 }
 
 .job-listing {
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     flex-wrap: wrap;
     padding: 20px;
