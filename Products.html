@@ -21,6 +21,58 @@
     <link href="assets/plugins/select2-bootstrap-5/select2-bootstrap-5-theme.min.css" rel="stylesheet">
     <!-- Custom style for this template -->
     <link href="assets/css/style.css" rel="stylesheet">
+    <style>
+        /* Modal Styling */
+.modal {
+    padding-top: 5rem;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    position: relative;
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 700px;
+}
+
+.modal-image {
+    width: 100%;
+    height: auto;
+}
+
+.thumbnails {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.thumbnails img {
+    width: 100px;
+    height: auto;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+</style>
 </head>
 
 <body>
@@ -202,19 +254,23 @@
                     </div>
                     <!-- end /. toolbox  -->
                     <div class="row g-4 mb-5">
+
+
                         <div class="col-sm-6 col-lg-4 col-xl-6 d-flex">
                             <!-- start listing card -->
                             <div class="card rounded-3 border-0 shadow-sm w-100 flex-fill overflow-hidden card-hover flex-fill w-100 card-hover-bg">
                                 <!-- start card link -->
-                                <a href="#" class="stretched-link"></a>
+                                
                                 <!-- end /. card link -->
                                 <!-- start card image wrap -->
-                                <div class="card-img-wrap card-image-hover overflow-hidden dark-overlay m1">
-                                    <img src="img/img2/pos.png" alt="" class="img-fluid">
+                                <div class="card-img-wrap card-image-hover overflow-hidden dark-overlay m1" onclick="openModal();">
+                                    <img src="img/img2/pos.png" alt="" class="img-fluid" >
                                 </div>
                                 <!-- end /. card image wrap -->
                                 <div class="d-flex flex-column h-100 position-relative p-3 ">
-                                    <div class="align-items-center bg-whatsapp cat-icon d-flex justify-content-center position-absolute rounded-circle text-white"><i class="fa-brands fa-whatsapp"></i></div>
+                                    <a href="https://wa.me/+971528931167?text=Hello%20I%20am%20interested%20in%20your%20products">
+                                        <div class="align-items-center bg-whatsapp cat-icon d-flex justify-content-center position-absolute rounded-circle text-white"><i class="fa-brands fa-whatsapp"></i></div>
+                                    </a>
                                     <div class="align-items-center d-flex flex-wrap gap-1 text-primary card-start mb-1">
                                     </div>
                                     <!-- start card title -->
@@ -233,7 +289,73 @@
                                             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#9b9b9b" class="bi bi-telephone" viewBox="0 0 16 16">
                                                 <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
                                             </svg>
-                                            <span>045549205</span>
+                                            <span>+971 52 8931167</span>
+                                        </a>
+                                        <!-- <a href="#" class="d-flex gap-2 align-items-center fs-13 fw-semibold">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#9b9b9b" class="bi bi-compass" viewBox="0 0 16 16">
+                                                <path d="M8 16.016a7.5 7.5 0 0 0 1.962-14.74A1 1 0 0 0 9 0H7a1 1 0 0 0-.962 1.276A7.5 7.5 0 0 0 8 16.016zm6.5-7.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
+                                                <path d="m6.94 7.44 4.95-2.83-2.83 4.95-4.949 2.83 2.828-4.95z" />
+                                            </svg>
+                                            <span>Directions</span>
+                                        </a> -->
+                                    </div>
+                                    <!-- end contact content -->
+                                </div>
+                            </div>
+                            <!-- end /. listing card -->
+                        </div>
+
+
+                       
+
+                        <div class="col-sm-6 col-lg-4 col-xl-6 d-flex">
+                            <!-- start listing card -->
+                            <div class="card rounded-3 border-0 shadow-sm w-100 flex-fill overflow-hidden card-hover flex-fill w-100 card-hover-bg">
+                                <!-- start card link -->
+                                <!-- end /. card link -->
+                                <!-- start card image wrap -->
+                                <div class="card-img-wrap card-image-hover overflow-hidden dark-overlay m1" onclick="openModal1();">
+                                    <img src="img/img2/drawer.png" alt="" class="img-fluid" >
+                                    <!-- <div class="bg-blur card-badge d-inline-block position-absolute start-0 text-white z-2"><i class="fa-solid fa-star"></i> Featured</div>
+                                    <div class="bg-blur card-badge d-inline-block position-absolute start-0 text-white z-2"><i class="fa-solid fa-tag"></i> $12.00 - $40.00</div> -->
+                                    <!-- <div class="d-flex end-0 gap-2 me-3 mt-3 position-absolute top-0 z-1">
+                                        <a href="#" class="align-items-center bg-blur btn-icon d-flex justify-content-center rounded-circle shadow-sm text-white" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Bookmark">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"></path>
+                                            </svg>
+                                        </a>
+                                    </div> -->
+                                </div>
+                                <!-- end /. card image wrap -->
+                                <div class="d-flex flex-column h-100 position-relative p-3 ">
+                                    <a href="https://wa.me/+971528931167?text=Hello%20I%20am%20interested%20in%20your%20products">
+                                        <div class="align-items-center bg-whatsapp cat-icon d-flex justify-content-center position-absolute rounded-circle text-white"><i class="fa-brands fa-whatsapp"></i></div>
+                                    </a>
+                                    <div class="align-items-center d-flex flex-wrap gap-1 text-primary card-start mb-1">
+                                        <!-- start ratings -->
+                                        <!-- <i class="fa-solid fa-star"></i> -->
+                                        <!-- end /. ratings -->
+                                        <!-- start ratings counter text -->
+                                        <!-- <span class="fw-medium text-primary"><span class="fs-6 fw-semibold me-1">(4.5)</span>2,391 reviews</span> -->
+                                        <!-- end /. ratings counter text -->
+                                    </div>
+                                    <!-- start card title -->
+                                    <h4 class="fs-18 fw-semibold mb-0">
+                                        Cash Drawer
+                                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-patch-check-fill text-success" viewBox="0 0 16 16">
+                                            <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
+                                        </svg> -->
+                                    </h4>
+                                    <!-- end /. card title -->
+                                    <!-- start contact content -->
+                                    <p>Model CD 410: A durable metal cash drawer with heavy-duty ball bearing rollers, removable 5-compartment coin tray, adjustable dividers, media slot for cheques and receipts, and a 3-position key lock
+                                    </p>
+                                    <div class="d-flex flex-wrap gap-3 mt-2 z-1">
+                                        <a href="tel:+4733378901" class="d-flex gap-2 align-items-center fs-13 fw-semibold">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#9b9b9b" class="bi bi-telephone" viewBox="0 0 16 16">
+                                                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                            </svg>
+                                            <span>+971 52 8931167</span>
                                         </a>
                                         <!-- <a href="#" class="d-flex gap-2 align-items-center fs-13 fw-semibold">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#9b9b9b" class="bi bi-compass" viewBox="0 0 16 16">
@@ -271,7 +393,9 @@
                                 </div>
                                 <!-- end /. card image wrap -->
                                 <div class="d-flex flex-column h-100 position-relative p-3 ">
-                                    <div class="align-items-center bg-whatsapp cat-icon d-flex justify-content-center position-absolute rounded-circle text-white"><i class="fa-brands fa-whatsapp"></i></div>
+                                    <a href="https://wa.me/+971528931167?text=Hello%20I%20am%20interested%20in%20your%20products">
+                                        <div class="align-items-center bg-whatsapp cat-icon d-flex justify-content-center position-absolute rounded-circle text-white"><i class="fa-brands fa-whatsapp"></i></div>
+                                    </a>
                                     <div class="align-items-center d-flex flex-wrap gap-1 text-primary card-start mb-1">
                                         <!-- start ratings -->
                                         <!-- <i class="fa-solid fa-star"></i> -->
@@ -295,69 +419,7 @@
                                             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#9b9b9b" class="bi bi-telephone" viewBox="0 0 16 16">
                                                 <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
                                             </svg>
-                                            <span>045549205</span>
-                                        </a>
-                                        <!-- <a href="#" class="d-flex gap-2 align-items-center fs-13 fw-semibold">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#9b9b9b" class="bi bi-compass" viewBox="0 0 16 16">
-                                                <path d="M8 16.016a7.5 7.5 0 0 0 1.962-14.74A1 1 0 0 0 9 0H7a1 1 0 0 0-.962 1.276A7.5 7.5 0 0 0 8 16.016zm6.5-7.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
-                                                <path d="m6.94 7.44 4.95-2.83-2.83 4.95-4.949 2.83 2.828-4.95z" />
-                                            </svg>
-                                            <span>Directions</span>
-                                        </a> -->
-                                    </div>
-                                    <!-- end contact content -->
-                                </div>
-                            </div>
-                            <!-- end /. listing card -->
-                        </div>
-
-                        <div class="col-sm-6 col-lg-4 col-xl-6 d-flex">
-                            <!-- start listing card -->
-                            <div class="card rounded-3 border-0 shadow-sm w-100 flex-fill overflow-hidden card-hover flex-fill w-100 card-hover-bg">
-                                <!-- start card link -->
-                                <a href="#" class="stretched-link"></a>
-                                <!-- end /. card link -->
-                                <!-- start card image wrap -->
-                                <div class="card-img-wrap card-image-hover overflow-hidden dark-overlay m1">
-                                    <img src="img/img2/drawer.png" alt="" class="img-fluid">
-                                    <!-- <div class="bg-blur card-badge d-inline-block position-absolute start-0 text-white z-2"><i class="fa-solid fa-star"></i> Featured</div>
-                                    <div class="bg-blur card-badge d-inline-block position-absolute start-0 text-white z-2"><i class="fa-solid fa-tag"></i> $12.00 - $40.00</div> -->
-                                    <!-- <div class="d-flex end-0 gap-2 me-3 mt-3 position-absolute top-0 z-1">
-                                        <a href="#" class="align-items-center bg-blur btn-icon d-flex justify-content-center rounded-circle shadow-sm text-white" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Bookmark">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"></path>
-                                            </svg>
-                                        </a>
-                                    </div> -->
-                                </div>
-                                <!-- end /. card image wrap -->
-                                <div class="d-flex flex-column h-100 position-relative p-3 ">
-                                    <div class="align-items-center bg-whatsapp cat-icon d-flex justify-content-center position-absolute rounded-circle text-white"><i class="fa-brands fa-whatsapp"></i></div>
-                                    <div class="align-items-center d-flex flex-wrap gap-1 text-primary card-start mb-1">
-                                        <!-- start ratings -->
-                                        <!-- <i class="fa-solid fa-star"></i> -->
-                                        <!-- end /. ratings -->
-                                        <!-- start ratings counter text -->
-                                        <!-- <span class="fw-medium text-primary"><span class="fs-6 fw-semibold me-1">(4.5)</span>2,391 reviews</span> -->
-                                        <!-- end /. ratings counter text -->
-                                    </div>
-                                    <!-- start card title -->
-                                    <h4 class="fs-18 fw-semibold mb-0">
-                                        Cash Drawer
-                                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-patch-check-fill text-success" viewBox="0 0 16 16">
-                                            <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
-                                        </svg> -->
-                                    </h4>
-                                    <!-- end /. card title -->
-                                    <!-- start contact content -->
-                                    <p>Model CD 410: A durable metal cash drawer with heavy-duty ball bearing rollers, removable 5-compartment coin tray, adjustable dividers, media slot for cheques and receipts, and a 3-position key lock
-                                    </p>
-                                    <div class="d-flex flex-wrap gap-3 mt-2 z-1">
-                                        <a href="tel:+4733378901" class="d-flex gap-2 align-items-center fs-13 fw-semibold">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#9b9b9b" class="bi bi-telephone" viewBox="0 0 16 16">
-                                                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
-                                            </svg>
-                                            <span>045549205</span>
+                                            <span>+971 52 8931167</span>
                                         </a>
                                         <!-- <a href="#" class="d-flex gap-2 align-items-center fs-13 fw-semibold">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#9b9b9b" class="bi bi-compass" viewBox="0 0 16 16">
@@ -406,7 +468,7 @@
                         <div class="mb-4">Join our newsletter and receive the best job<br class="d-none d-xxl-block"> openings of the week, right on your inbox.</div>
                         <div class="border rounded-4 p-4 mb-4">
                             <h6 class="text-white-50 mb-3">Join our Whatsapp:</h6>
-                            <a class="align-items-center d-block d-flex whatsapp-number" href="#"><i class="fa-brands fa-whatsapp fs-2 me-2"></i><span class="fs-5 fw-semibold text-decoration-underline">045549205</span></a>
+                            <a class="align-items-center d-block d-flex whatsapp-number" href="#"><i class="fa-brands fa-whatsapp fs-2 me-2"></i><span class="fs-5 fw-semibold text-decoration-underline">+971 52 8931167</span></a>
                         </div>
                         <h5 class="fw-bold mb-4">Want to join Sonix?<br> Write us !</h5>
                         <span>Info@sonixinternational.com</span>
@@ -423,7 +485,7 @@
                           </div>    
                         <div class="mt-4">
                             <a class="d-block fw-medium mb-1" href="#">
-                                <i class="fa-solid fa-phone me-2"></i><span>045549205</span>
+                                <i class="fa-solid fa-phone me-2"></i><span>+971 52 8931167</span>
                             </a>
                             <a class="email-link d-block fw-medium" href="#">
                                 <i class="fa-solid fa-envelope me-2"></i>
@@ -498,6 +560,83 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modal Structure -->
+<div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">x</span>
+    <div class="modal-content">
+        <img id="mainImage" src="img/pos/pos1.jpg" class="modal-image">
+        <div class="thumbnails">
+            <img src="img/pos/pos2.jpg" onclick="changeImage(this)">
+            <img src="img/pos/pos3.jpg" onclick="changeImage(this)">
+            <img src="img/pos/pos4.jpg" onclick="changeImage(this)">
+            <img src="img/pos/pos5.jpg" onclick="changeImage(this)">
+            <img src="img/pos/pos6.jpg" onclick="changeImage(this)">
+            <img src="img/pos/pos7.jpg" onclick="changeImage(this)">
+        </div>
+    </div>
+</div>
+
+ <!-- Modal Structure -->
+ <div id="imageModal_1" class="modal">
+    <span class="close" onclick="closeModal1()">x</span>
+    <div class="modal-content">
+        <img id="mainImage1" src="img/Drawer/1.jpeg" class="modal-image">
+        <div class="thumbnails">
+            <img src="img/Drawer/2.jpeg" onclick="changeImage1(this)">
+            <img src="img/Drawer/3.jpeg" onclick="changeImage1(this)">
+            <img src="img/Drawer/4.jpeg" onclick="changeImage1(this)">
+            <img src="img/Drawer/5.jpeg" onclick="changeImage1(this)">
+        </div>
+    </div>
+</div>
+
+    <script>
+ function openModal() {
+    document.getElementById("imageModal").style.display = "block";
+}
+
+function closeModal() {
+    document.getElementById("imageModal").style.display = "none";
+}
+
+
+
+function changeImage(imgElement) {
+    var mainImage = document.getElementById("mainImage");
+    mainImage.src = imgElement.src;
+}
+
+
+// model2
+
+
+function openModal1() {
+    document.getElementById("imageModal_1").style.display = "block";
+}
+function closeModal1() {
+    document.getElementById("imageModal_1").style.display = "none";
+}
+
+// Close modal when clicking outside of the modal content
+window.onclick = function(event) {
+    var modal = document.getElementById("imageModal");
+    var modal1 = document.getElementById("imageModal_1");
+
+    if (event.target == modal) {
+        closeModal();
+    }
+    if (event.target == modal1) {
+        closeModal1();
+    }
+}
+
+function changeImage1(imgElement) {
+    var mainImage = document.getElementById("mainImage1");
+    mainImage.src = imgElement.src;
+}
+
+    </script>
     <!-- end /. footer -->
     <!-- Optional JavaScript -->
     <script src="assets/plugins/jQuery/jquery.min.js"></script>
